@@ -67,7 +67,7 @@ export default function Footer() {
                   </span>
                   <ul className="list-unstyled">
                     <li>
-                      Phone Number: (+84)968886688
+                      Phone Number: (682) 559-4943
                     </li>
                     <li>
                       Email: quynhdongikn@gmail.com

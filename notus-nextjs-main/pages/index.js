@@ -10,16 +10,17 @@ export default function Index() {
     <>
       <IndexNavbar fixed />
       <section className="header relative pt-16 items-center flex h-screen max-h-860-px">
-        <div className="container mx-auto items-center flex flex-wrap" style={{backgroundColor: "#B5EAEA"}}>
-          <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
-            <div className="pt-32 sm:pt-0">
+        {/* <div className="max-screen"> */}
+        <div className="container mx-auto items-center flex flex-wrap top-mb" style={{backgroundColor: "#B5EAEA"}}>
+          <div className="w-full md:w-6/12 lg:w-6/12 xl:w-6/12 px-4 bot-mb">
+            <div className=" sm:pt-0">
               <h2 className="font-semibold text-4xl text-blueGray-600">
               Full Stack Developer
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
                 Hello! My name is Quynh Dong. I'm concentrating on web development and I strive for the best user experience.
               </p>
-              <div className="mt-12">
+              <div className="mt-12 btn-flex">
                 <a
                   href="/profile"
                   className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-400 active:bg-blueGray-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
@@ -34,19 +35,22 @@ export default function Index() {
                 </a>
               </div>
             </div>
+            
           </div>
+          
         </div>
         <img
-          className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
+          className="absolute top-0 b-auto right-0 sm:w-6/12 sm:mt-0"
           src="/img/quynh.jpg"
           alt="..."
         />
+        {/* </div> */}
       </section>
 
       <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
       <div className="justify-center text-center flex flex-wrap mt-24" style={{marginBottom: 150}}>
-          <div className="w-full md:w-6/12 px-12 md:px-4">
-            <h2 className="font-semibold text-4xl">My Work</h2>
+          <div className="w-full px-12 md:px-4">
+            <h2 className="font-semibold text-4xl" style={{paddingTop: 50}}>My Work</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
               Some of the projects I've done and I've been working on
             </p>
@@ -56,7 +60,7 @@ export default function Index() {
         <div className="container mx-auto">
           <div className="justify-center flex flex-wrap">
             <div className="w-full lg:w-12/12 px-4  -mt-24">
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap" style={{marginBottom: 100, marginTop: 50}}>
                 <div className="w-full lg:w-4/12 px-4">
                   <h5 className="text-xl font-semibold pb-4 text-center">
                     PTE Magic
@@ -119,6 +123,7 @@ export default function Index() {
             viewBox="0 0 2560 100"
             x="0"
             y="0"
+            
           >
             <polygon
               className="text-blueGray-100 fill-current"
@@ -128,7 +133,7 @@ export default function Index() {
         </div>
         <div className="container mx-auto" style={{marginBottom: 100, marginTop: 100}}>
           <div className="flex flex-wrap items-center">
-            <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
+            <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto">
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
                 <img
                   alt="..."
@@ -197,7 +202,7 @@ export default function Index() {
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">Pages</h6>
                       <p className="mb-4 text-blueGray-500">
-                        <a href="https://ptemagicpractice.com/">https://ptemagicpractice.com/</a>
+                        <a href="https://ptemagicpractice.com/">PTE Magic</a>
                       </p>
                     </div>
                   </div>
